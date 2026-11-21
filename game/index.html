@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lanternlight — a quiet heist in the Grand Archive</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+  <header id="hud">
+    <div id="hud-level">Level 1 / 3 — The Quiet Hall</div>
+    <div id="hud-lanterns">Lanterns ○○○</div>
+    <div id="hud-pebbles">Pebbles 5</div>
+    <div id="hud-suspicion-wrap" title="How close the wardens are to raising the alarm">
+      <span id="hud-suspicion-label">Alarm</span>
+      <div id="hud-suspicion-track"><div id="hud-suspicion" class="bar calm"></div></div>
+    </div>
+    <div id="hud-status" class="status calm">Unseen</div>
+    <div id="hud-time">0:00</div>
+    <button id="hud-mute" type="button">Sound on (M)</button>
+  </header>
+  <div id="hud-objective">Steal the moon-lanterns, then reach the EXIT unseen.</div>
+  <div id="stage">
+    <canvas id="game-canvas" width="960" height="640"></canvas>
+    <div id="overlay" class="hidden"></div>
+  </div>
+  <footer id="help">
+    <span><b>WASD / Arrows</b> move</span>
+    <span><b>Shift</b> sneak — slow, silent, harder to spot</span>
+    <span><b>Click</b> throw a pebble to distract a warden</span>
+    <span><b>P</b> pause</span>
+    <span><b>R</b> restart floor</span>
+    <span><b>M</b> mute</span>
+  </footer>
+  <p id="credit">Lanternlight — an original stealth game. Hide in the bushes, mind the lamp cones, steal the moon-lanterns, and leave unseen.</p>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
